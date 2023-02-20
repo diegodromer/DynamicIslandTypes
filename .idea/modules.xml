@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/DynamicIslandTypes.iml" filepath="$PROJECT_DIR$/.idea/DynamicIslandTypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Dynamic_Island.iml" filepath="$PROJECT_DIR$/.idea/modules/Dynamic_Island.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.unitTest.iml" />
     </modules>
   </component>
 </project>
