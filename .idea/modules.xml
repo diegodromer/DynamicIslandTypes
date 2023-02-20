@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Dynamic_Island.iml" filepath="$PROJECT_DIR$/.idea/modules/Dynamic_Island.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.androidTest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Dynamic_Island_Types.iml" filepath="$PROJECT_DIR$/.idea/modules/Dynamic_Island_Types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dynamic_Island_Types.app.unitTest.iml" />
     </modules>
   </component>
 </project>
