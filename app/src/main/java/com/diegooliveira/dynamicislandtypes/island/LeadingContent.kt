@@ -24,10 +24,11 @@ fun LeadingContent(state: IslandState) {
         enter = fadeIn(animationSpec = tween(300, 300))
     ) {
         Box(
-            Modifier.width(state.leadingContentSize),
+            Modifier
+                .width(state.leadingContentSize),
             contentAlignment = Alignment.Center,
         ) {
-            when(state) {
+            when (state) {
                 is IslandState.CallState -> {
                     Text(text = "9:41", color = Green)
                 }
@@ -36,7 +37,7 @@ fun LeadingContent(state: IslandState) {
                     Icon(
                         imageVector = Icons.Rounded.Call,
                         contentDescription = null,
-                        tint = Green
+                        tint = Green,
                     )
                 }
 

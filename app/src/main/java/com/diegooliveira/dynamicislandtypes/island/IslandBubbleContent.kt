@@ -17,7 +17,7 @@ import com.diegooliveira.dynamicislandtypes.ui.theme.Orange
 @Composable
 fun IslandBubbleContent(state: IslandState) {
     val width = state.bubbleContentSize.width
-    val heigth = state.bubbleContentSize.height
+    val height = state.bubbleContentSize.height
 
     val scale = remember { Animatable(1.5f) }
     LaunchedEffect(Unit) {
@@ -33,14 +33,15 @@ fun IslandBubbleContent(state: IslandState) {
     Box(
         modifier = Modifier
             .width(width * scale.value)
-            .height(heigth),
+            .height(height),
         contentAlignment = Alignment.Center,
     ) {
+
         var bubbleContent: @Composable () -> Unit by remember {
             mutableStateOf({})
         }
         LaunchedEffect(state, block = {
-            when(state) {
+            when (state) {
                 is IslandState.CallTimerState -> {
                     bubbleContent = {
                         Icon(
@@ -50,6 +51,7 @@ fun IslandBubbleContent(state: IslandState) {
                         )
                     }
                 }
+
                 else -> {}
             }
         })

@@ -15,14 +15,14 @@ fun TrailingContent(state: IslandState) {
     AnimatedVisibility(
         modifier = Modifier.fillMaxHeight(),
         visible = state.hasTrailingContent,
-        enter = fadeIn(animationSpec = tween(300, 300))
+        enter = fadeIn(animationSpec = tween(300,300))
     ) {
         Box(
             Modifier
                 .width(state.trailingContentSize),
-            contentAlignment = Alignment.Center
+            contentAlignment = Alignment.Center,
         ) {
-            when(state) {
+            when (state) {
                 is IslandState.CallState -> {
                     CallWaveform()
                 }

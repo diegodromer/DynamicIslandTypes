@@ -17,28 +17,29 @@ sealed class IslandState(
     val bubbleContentSize: DpSize = DpSize(50.dp, 50.dp),
     val hasBubbleContent: Boolean = false
 ) {
+
     val fullWidth = contentSize.width + leadingContentSize + trailingContentSize
 
-    class DefaultState: IslandState()
+    class DefaultState : IslandState()
 
-    class CallTimerState : IslandState (
+    class CallTimerState : IslandState(
         leadingContentSize = 50.dp,
         hasLeadingContent = true,
         hasBubbleContent = true
     )
 
-    class CallState : IslandState (
+    class CallState : IslandState(
         leadingContentSize = 65.dp,
         trailingContentSize = 55.dp,
         hasLeadingContent = true,
-        hasTrailingContent = true
+        hasTrailingContent = true,
     )
 
-    class FaceUnlockState : IslandState (
+    class FaceUnlockState : IslandState(
         contentSize = DpSize(
-            150.dp,
-            150.dp
+            150.dp, 150.dp
         ),
         hasMainContent = true,
     )
+
 }

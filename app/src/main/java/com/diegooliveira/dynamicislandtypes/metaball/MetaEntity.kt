@@ -6,7 +6,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 
 @Composable
-fun MetaEntity (
+fun MetaEntity(
     modifier: Modifier = Modifier,
     blur: Float = 30f,
     metaContent: @Composable BoxScope.() -> Unit,
@@ -20,10 +20,9 @@ fun MetaEntity (
     ) {
         Box(
             modifier = Modifier
-                .custom(blur),
-            content = metaContent
+                .customBlur(blur),
+            content = metaContent,
         )
         content()
     }
 }
-

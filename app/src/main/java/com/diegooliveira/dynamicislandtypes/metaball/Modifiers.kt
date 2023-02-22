@@ -6,7 +6,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asComposeRenderEffect
 import androidx.compose.ui.graphics.graphicsLayer
 
-fun Modifier.custom(blur: Float) = this.then(
+fun Modifier.customBlur(blur: Float) = this.then(
     graphicsLayer {
         renderEffect = RenderEffect
             .createBlurEffect(

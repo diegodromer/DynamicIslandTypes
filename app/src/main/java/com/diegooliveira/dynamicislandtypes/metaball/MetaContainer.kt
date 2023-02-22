@@ -20,7 +20,7 @@ const val ShaderSource = """
     half4 main(float2 fragCoord) {
         half4 color = composable.eval(fragCoord);
         float alpha = color.a;
-        if(alpha > cutoff) {
+        if (alpha > cutoff) {
             alpha = 1.0;
         } else {
             alpha = 0.0;
@@ -39,12 +39,13 @@ fun MetaContainer(
 ) {
     val metaShader = remember { RuntimeShader(ShaderSource) }
     Box(
-        modifier.graphicsLayer {
-            metaShader.setFloatUniform("cutoff", cutoff)
-            renderEffect = RenderEffect.createRuntimeShaderEffect(
-                metaShader, "composable"
-            ).asComposeRenderEffect()
-        },
-        content = content
+        modifier
+            .graphicsLayer {
+                metaShader.setFloatUniform("cutoff", cutoff)
+                renderEffect = RenderEffect.createRuntimeShaderEffect(
+                    metaShader, "composable"
+                ).asComposeRenderEffect()
+            },
+        content = content,
     )
 }

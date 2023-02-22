@@ -72,11 +72,26 @@ fun DynamicIsland(islandState: IslandState) {
                 .fillMaxWidth(),
             verticalAlignment = Alignment.Top
         ) {
+            MetaEntity(
+                metaContent = {
+                    Box(
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .background(
+                                Color.Black,
+                                shape = RoundedCornerShape(50.dp)
+                            )
+                    )
+                }
+            ) {
+                IslandContent(state = islandState)
+            }
+            
             AnimatedVisibility(
                 visible = islandState.hasBubbleContent,
                 modifier = Modifier.padding(start = 8.dp),
                 enter = bubbleEnterTransition,
-                exit = bubbleExitTransition,
+                exit = bubbleExitTransition
             ) {
                 MetaEntity(
                     metaContent = {
@@ -88,9 +103,9 @@ fun DynamicIsland(islandState: IslandState) {
                                     shape = RoundedCornerShape(50.dp)
                                 )
                         )
-                    }
+                    } 
                 ) {
-                    IslandContent(state = islandState)
+                    IslandBubbleContent(state = islandState)
                 }
             }
         }
